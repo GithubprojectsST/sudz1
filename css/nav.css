@@ -88,15 +88,17 @@
 html {
     background-color: #191919;
     color: white;
-    background-image: url(../img/ccbg1.jpg);
+   background-image: url(../img/ccbg1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
+    
 }
 
 body {
     font-family: "Montserrat";
+    
 
 }
 .bodytext
@@ -128,4 +130,10 @@ h3
 { padding-left: 1%;
 
      color: black;
+}
+li
+{
+    color: black;
+    padding-left: 1%;
+     font-size: 27px;
 }
