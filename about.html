@@ -13,23 +13,19 @@
 </head>
 <body>
 
-<div class="navbar">
+
+    <div class="topnav" id="myTopnav">
   <a href="index.html" >Home</a>
-  <a href="benefits.html">Benefits to SME's</a>
-  <a href="whychooseus.html" >Why Choose Us?</a>
- 
-  <div class="dropdown" style="float: right">
-  <button class="dropbtn" onclick="myFunction()">Menu
-    <i class="fa fa-caret-down"></i>
-  </button>
-  <div class="dropdown-content" id="myDropdown">
-   
-    <a  href="ourproducts.html">About our Products</a>
-    <a class="active" href="about.html">About Us</a>
-    <a href="contact.html">Contact Us</a>
-  </div>
-  </div> 
+  <a href="benefits.html" >Benefits to SME's</a>
+  <a href="whychooseus.html">Why Choose Us?</a>
+  <a href="ourproducts.html">About Our Products</a>
+  <a href="about.html" class="active">About Us</a>
+  <a href="contact.html">Contact Us</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
 </div>
+
 <div class="bodytext">
     <h1>About us.</h1>
    <p>
@@ -40,22 +36,16 @@ Our highly skilled professionals will assist you to revolutionize your business 
 
 
 
-<script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
+    <script>
 function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var myDropdown = document.getElementById("myDropdown");
-    if (myDropdown.classList.contains('show')) {
-      myDropdown.classList.remove('show');
-    }
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
   }
 }
+</script>
 </script>
 </body>
 </html>
